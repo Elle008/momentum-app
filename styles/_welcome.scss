@@ -1,0 +1,29 @@
+@import 'variables';
+@import 'mediaquery';
+@import 'mixins';
+
+
+// welcome modal //
+
+#welcome {
+    @include flex (column, space-around, center);
+    padding: 10% 0;
+    height: 60vh;
+    width: 85%;
+
+    form {
+        width: 50vw;
+    }
+    input {
+        width: 100%;
+        margin-top: 20px;
+
+        &[type=submit] {
+            border: none;
+            background-color: $accent;
+            text-align: center;
+            
+        }
+    }
+}
+

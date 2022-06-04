@@ -1,0 +1,102 @@
+@import 'variables';
+@import 'mediaquery';
+@import 'mixins';
+@import 'welcome';
+@import 'app';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 500 1.2rem $font;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+   
+}
+
+body {
+    background-image: url(../assets/nature.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include flex (column, center, center);
+    height: 100vh;
+    width: 100vw;
+}
+
+h1 {
+    font-size: 2rem;
+    // padding: 40px 0;
+}
+
+h3 {
+    font-size: 1rem;
+    
+    text-transform: capitalize;
+    font-weight: 100;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    @include flex (column, center, center);
+}
+
+.logo {
+    width: 5rem;
+    padding-bottom: 20px
+}
+
+section {
+    @include flex (column, center, center);
+    height: 60vh;
+    width: 85%;
+}
+
+input {
+    width: 80%;
+    border: none;
+    border-bottom: 2px dashed rgba(255, 255, 255, 0.5);
+    background: transparent;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+
+    [type=submit] {
+        cursor: pointer;
+    }
+}
+
+label {
+    font-size: 1rem;
+    opacity: 50%;
+    font-weight: 100;
+}
+
+::-webkit-input-placeholder { /* Edge */
+    color: white;
+  }
+  
+:-ms-input-placeholder { /* Internet Explorer */
+    color: white;
+    opacity: 50%;
+}
+  
+::placeholder {
+    color: white;
+    opacity: 50%;
+}
+
+input:focus::placeholder {
+    color: transparent;
+    opacity: 50%;
+}

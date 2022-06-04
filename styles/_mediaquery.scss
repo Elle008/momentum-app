@@ -1,0 +1,27 @@
+@import 'variables';
+@import 'mixins';
+
+@media (min-width: 1025px)  {
+    #todo {
+        width: 30vw;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #todo {
+        width: 50vw;
+    }
+}
+
+@media (max-width: 768px) {
+    #todo {
+        width: 70vw;
+    }
+}
+
+@media (max-width: 480px) {
+    #todo {
+        width: 100vw;
+    }
+}

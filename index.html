@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="script.js" defer></script>
+    <title>Momentum App</title>
+</head>
+<body>
+        <div id="welcome" class="">
+
+            <img class='logo' src="./assets/logo.png" alt="logo">
+
+            <h1>Ready for Momentum?</h1>
+            <form data-name onsubmit = 'return false'>
+                <input type="text" id="fname" placeholder="First Name" class="input" required>
+                <input type="submit" value= "Continue" id="continue" class="submit-btn">
+            </form>
+        </div>
+
+        <div id="main-page" class="">
+
+            <div id="date-time" class="">
+                <div id="time" data-time></div>
+                <div id="date" data-date></div>
+            </div>
+
+            <div id="main-content" class="main">
+
+                <h3 id="greeting" data-greet></h3>
+
+                <div class="wrapper" data-edit-quote>
+
+                    <h1 id="quote"></h1>
+                    <a href="#">
+                        <img src="./assets/pencil.svg" class="edit icon"/>
+                    </a>
+
+                </div>
+            
+                <input type= "text" id= "quote-input" placeholder="Type a quote here">
+
+                <div id= "focus">
+                    <label for="daily-focus" data-focusLabel >What will you focus on today?</label>
+                    <input type= "text" id= "daily-focus">
+                    
+                    <div  class="wrapper">
+                        <h2 id="today-focus" class="editable"></h2>
+                        <a href="#">
+                            <img src="./assets/pencil.svg" class="edit icon"/>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div id="todo-wrapper">
+                <a href="#" id="open-todo">
+                    <img src="./assets/todo.svg" class="icon"/>
+                </a>
+
+                <div id="todo" data-modal>
+
+                    <h3>Todo List</h3>
+                    <a href="#" ><img src="./assets/exit.svg" alt="exit" id="exit-todo"></a>
+
+                    <ul id="todo-list">
+                    </ul>
+                    
+                    <input type="text" placeholder='add new todo. . .' data-todo-input>
+                    
+                </div>
+            </div>  
+        </div>
+</body>
+</html>
