@@ -25,7 +25,7 @@ function hours(i) {
         i = 12
     }
 
-    if (i >= 12 ) {
+    if (i > 12 ) {
         i -= 12
     }
 
