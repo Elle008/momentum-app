@@ -33,7 +33,7 @@ function hours(i) {
 }
 
 function session() {
-    let h = new Date().getHours
+    let h = new Date().getHours()
     let s = ''
     if (h < 12) {
         s = 'AM'
